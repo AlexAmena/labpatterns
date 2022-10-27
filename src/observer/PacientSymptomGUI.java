@@ -117,5 +117,12 @@ public class PacientSymptomGUI extends JFrame {
 
 		contentPane.add(labelPacient);
 		this.setVisible(true);
+		
+		//triple
+		p.addSymptomByName(((Symptom)symptomComboBox.getSelectedItem()).getName(),	
+				Integer.parseInt(weightField.getText()));
+				
+		p.removeSymptomByName(((Symptom)symptomComboBox.getSelectedItem()).getName());
+
 	}
 }
